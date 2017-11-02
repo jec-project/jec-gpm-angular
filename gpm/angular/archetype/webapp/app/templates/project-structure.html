@@ -1,0 +1,104 @@
+<h1><mat-icon>settings</mat-icon> Project Structure</h1>
+
+<p>
+  The current section describes the architecture of an Angular project
+  deployed in an <em>Entreprise JavaScript Project</em> (EJP).
+</p>
+<h2>GlassCat EJP Structure</h2>
+<p>
+  EJPs have been designed to clearly separate the presentation (front-side)
+  from the business logic (back-side) of your application. The presentation
+  is located in the <code>webapp</code> folder, while the <code>src</code>
+  directory contains the business logic:
+</p>
+
+<mat-card>
+<mat-card-content>
+<pre>
+project
+   │
+   ├─src
+   ├─typings
+   ├─webapp
+   └─tsconfig.json
+</pre>
+</mat-card-content>
+</mat-card>
+
+<p>
+The <code>tsconfig.json</code> file ad the <code>typings</code> folder
+define TypeScript configuration settings.
+</p>
+
+<h3>The Webapp Folder</h3>
+<mat-card>
+<mat-card-content>
+<pre>
+webapp
+   │
+   ├─app
+   ├─node_modules
+   ├─styles
+   ├─views
+   ├─WEB-INF
+   ├─index.html
+   └─package.json
+</pre>
+</mat-card-content>
+</mat-card>
+
+<h3>Angular Application Folder</h3>
+<mat-card>
+<mat-card-content>
+<pre>
+app
+ │
+ ├─business
+ ├─components
+ ├─modules
+ ├─services
+ ├─templates
+ ├─main.ts
+ └─systemjs.config.js
+</pre>
+</mat-card-content>
+</mat-card>
+
+<h3>Source Folder</h3>
+<p>
+  The <code>scr</code> folder usually contains back-side components, such as
+  jslets and services. JEC specification recommends to separate front-side and
+  back-side components in different EJPs; so, you should never add components in
+  the source <code>scr</code> of a JEC Angular app.
+</p>
+<mat-card>
+<mat-card-content>
+<pre>
+src
+ │
+ └─jslets
+     ├─AngularApp.ts
+     └─Status.ts
+</pre>
+</mat-card-content>
+</mat-card>
+<p>
+  The <code>AngularApp</code> jslet provides a convenient way to control the
+  visibility of an application by setting the available routes:
+</p>
+<mat-card>
+<mat-card-content>
+<pre ng-non-bindable>
+@WebJslet({{'{'}}
+  name: "AngularApp",
+  urlPatterns: [
+    "/app",
+    "/app/welcome",
+    "/app/project-structure",
+    "/app/lazy-loading/*"
+  ],
+  template: "/views/angular-app.ejs"
+{{'}'}})
+</pre>
+</mat-card-content>
+</mat-card>

@@ -1,0 +1,30 @@
+<!-- Main navigation bar -->
+<mat-toolbar color="primary">
+  <button mat-button routerLink="/welcome">
+    <mat-icon>home</mat-icon>
+    <% projectName %>
+  </button>
+  <button mat-button routerLink="/project-structure">
+    <mat-icon>settings</mat-icon>
+    Project Structure
+  </button>
+  <button mat-button routerLink="/lazy-loading">
+    <mat-icon>cached</mat-icon>
+    Lazy Loading
+  </button>
+  <span class="tool-bar-space"></span>
+  <button mat-button (click)="goToJEC()">
+    <img src="../styles/assets/jec-logo-white.svg" width=28/>
+    JEC on GitHub
+  </button>
+</mat-toolbar>
+
+<!-- Angular router outlet -->
+<div id="app-wrapper">
+  <router-outlet></router-outlet>
+</div>
+
+<!-- App footer -->
+<footer id="app-footer">
+  <p>&copy; Company 2017</p>
+</footer>

@@ -1,0 +1,73 @@
+
+<h1><mat-icon>home</mat-icon> <% projectName %></h1>
+<h4>Welcome to the Angular Project Model for GlassCat Application Server!</h4>
+
+<mat-grid-list cols="3" gutterSize="0.5rem">
+  <mat-grid-tile>
+    <div class="welcome-card">
+      <h4>Directives Sample</h4>
+      <div>
+        <p>
+          This section contains an <code>*ngIf</code> directive which is
+          activated when clicking the <em>Test Angular directives</em> button:
+        </p>
+        <p>
+          <mat-chip-list *ngIf="message!==null">
+            <mat-chip color="accent" selected="true">
+              <strong>Well done,</strong> {{message}}
+            </mat-chip>
+          </mat-chip-list>
+        </p>
+      </div>
+      <div>
+        <button mat-raised-button (click)="showMessage()">
+          Test Angular directives
+          <mat-icon>keyboard_arrow_right</mat-icon>
+        </button>
+      </div>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <div class="welcome-card">
+      <h4>Project Structure</h4>
+      <div>
+        <p>
+          This section provides information about the GlassCat specific
+          architecture for Angular applications.
+        </p>
+        <p>
+          By following this well-structured model, you will easily create and
+          maintain scalable applications.
+        </p>
+      </div>
+      <div>
+        <button mat-raised-button routerLink="/project-structure">
+          View details
+          <mat-icon>keyboard_arrow_right</mat-icon>
+        </button>
+      </div>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <div class="welcome-card">
+      <h4>Lazy Loading</h4>
+      <div>
+        <p>
+          The Angular Project Model demonstrates how to implement
+          angular <em>lazy loading module</em> features for 
+          improving performances of your application.
+        </p>
+        <p>
+          Click the following button to dynamically load a new module in 
+          this sample project:
+        </p>
+      </div>
+      <div>
+        <button mat-raised-button routerLink="/lazy-loading">
+          Load module
+          <mat-icon>keyboard_arrow_right</mat-icon>
+        </button>
+      </div>
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>

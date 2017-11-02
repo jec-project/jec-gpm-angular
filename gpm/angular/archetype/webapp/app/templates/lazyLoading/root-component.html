@@ -1,0 +1,29 @@
+<h1><mat-icon>cached</mat-icon> Lazy Loading</h1>
+<p>
+  Lazy loading modules helps us decrease the startup time of an application.
+</p>
+<h3>About Lazy Loading</h3>
+<p>
+  Lazy loading in means <strong>register the module in the angular
+  application only when the route hits!</strong>
+</p>
+<p>
+  In this bootstrap application, lazy loading sample parts of are isolated in 
+  each <code>lazyLoading</code> folder of the <code>webbapp/app</code> structure.
+  The current view, associated with <code>RootComponent</code>, is loaded only 
+  when the user navigates to the <code>lazy-loading/</code> route.
+</p>
+<p>
+  You can add as many sub-components as you want in a lazy loaded component, as
+  shown within the following tabs:
+</p>
+<nav mat-tab-nav-bar>
+    <a mat-tab-link
+      *ngFor="let tabLink of tabLinks"
+      [routerLink]="tabLink.link"
+      routerLinkActive #rla="routerLinkActive"
+      [active]="rla.isActive">
+    {{tabLink.label}}
+  </a>
+</nav>
+<router-outlet></router-outlet>
