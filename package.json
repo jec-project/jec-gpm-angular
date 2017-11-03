@@ -1,6 +1,6 @@
 {
   "name": "jec-gpm-angular",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A GlassCat Project Model (GPM) that deploys Angular applications with Material dependencies.",
   "repository": {
     "type": "git",
