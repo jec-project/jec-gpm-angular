@@ -14,7 +14,7 @@ JEC Angular GPM needs the following system parameters in order to work correctly
 
 ## Update Release Notes
 
-**Current stable release:** [1.0.1](CHANGELOG.md#jec-gpm-angular-1.0.1)
+**Current stable release:** [1.0.2](CHANGELOG.md#jec-gpm-angular-1.0.2)
  
 For a complete listing of release notes for JEC Angular GPM update releases, see the [CHANGELOG](CHANGELOG.md) file. 
 

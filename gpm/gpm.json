@@ -5,6 +5,7 @@
   "project": {
     "name": "Angular",
     "version":"1.0.0",
+    "target": "angular",
     "title": "Angular Project Model",
     "description": "Deploys an Angular GlassCat project with Material dependencies.",
     "author": "ONSOFT SYSTEMS"

@@ -1,5 +1,14 @@
 # JEC Angular GPM: Update Release Notes
 
+<a name="jec-gpm-angular-1.0.2"></a>
+## **1.0.2** (2017-11-04)
+
+### Bug Fixes
+
+### Features
+
+- Adding the `target` property to the `gpm.json` file.
+
 <a name="jec-gpm-angular-1.0.1"></a>
 ## **1.0.1** (2017-11-03)
 
