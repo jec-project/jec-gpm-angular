@@ -22,7 +22,7 @@ For a complete listing of release notes for JEC Angular GPM update releases, see
 This JEC Angular GPM is licensed under Apache 2.0. Full license text is available in [LICENSE](LICENSE).
 
 ```
-Copyright 2016-2017 Pascal ECHEMANN.
+Copyright 2016-2018 Pascal ECHEMANN.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
